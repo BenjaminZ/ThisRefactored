@@ -1,5 +1,5 @@
 ﻿namespace ThisRefactored.Domain;
 
-public class Class1
+public interface IDomainEvent
 {
 }

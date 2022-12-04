@@ -6,8 +6,8 @@ project.lock.json
 .DS_Store
 *.pyc
 
-# Visual Studio Code
-.vscode
+# Sqlite
+App_Data/
 
 # User-specific files
 *.suo
@@ -30,6 +30,7 @@ msbuild.log
 msbuild.err
 msbuild.wrn
 
-# Visual Studio 2015
+# IDE
 .vs/
 .idea/
+.vscode

@@ -30,6 +30,7 @@ There should be these endpoints:
 All models are specified in the `/Models` folder, but should conform to:
 
 **Product:**
+
 ```
 {
   "Id": "01234567-89ab-cdef-0123-456789abcdef",
@@ -41,6 +42,7 @@ All models are specified in the `/Models` folder, but should conform to:
 ```
 
 **Products:**
+
 ```
 {
   "Items": [
@@ -55,6 +57,7 @@ All models are specified in the `/Models` folder, but should conform to:
 ```
 
 **Product Option:**
+
 ```
 {
   "Id": "01234567-89ab-cdef-0123-456789abcdef",
@@ -64,6 +67,7 @@ All models are specified in the `/Models` folder, but should conform to:
 ```
 
 **Product Options:**
+
 ```
 {
   "Items": [
