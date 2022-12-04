@@ -6,9 +6,9 @@ namespace ThisRefactored.Persistence;
 
 public class ProductDbContext : DbContext
 {
-    private readonly IDomainEventPublisher _domainEventPublisher;
+    private readonly IDomainEventPublisher? _domainEventPublisher;
 
-    public ProductDbContext(DbContextOptions<ProductDbContext> options, IDomainEventPublisher domainEventPublisher) : base(options)
+    public ProductDbContext(DbContextOptions<ProductDbContext> options, IDomainEventPublisher? domainEventPublisher = null) : base(options)
     {
         _domainEventPublisher = domainEventPublisher;
     }
@@ -32,6 +32,11 @@ public class ProductDbContext : DbContext
 
     private async Task DispatchDomainEvents(CancellationToken cancellationToken)
     {
+        if (_domainEventPublisher == null)
+        {
+            return;
+        }
+        
         var domainEventEntities = ChangeTracker.Entries<IEntity>()
                                                .Select(po => po.Entity)
                                                .Where(po => po.DomainEvents.Any())
