@@ -30,6 +30,6 @@ public class Product : Entity
 
     public void Delete()
     {
-        PublishDomainEvent(new ProductDeleted(Id));
+        PublishDomainEvent(new OnProductDeleted(Id));
     }
 }

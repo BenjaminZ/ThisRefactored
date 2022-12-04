@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using ThisRefactored.Application.Models;
+using ThisRefactored.Application.Dtos;
 using ThisRefactored.Domain.Entities;
 using ThisRefactored.Persistence;
 

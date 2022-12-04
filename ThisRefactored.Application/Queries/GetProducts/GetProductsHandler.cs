@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using ThisRefactored.Application.Models;
+using ThisRefactored.Application.Dtos;
 using ThisRefactored.Persistence;
 
 namespace ThisRefactored.Application.Queries.GetProducts;

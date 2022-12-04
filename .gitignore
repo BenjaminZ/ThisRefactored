@@ -33,4 +33,5 @@ msbuild.wrn
 # IDE
 .vs/
 .idea/
-.vscode
+.vscode/
+*.sln.DotSettings

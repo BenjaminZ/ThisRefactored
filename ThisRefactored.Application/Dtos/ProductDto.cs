@@ -1,6 +1,6 @@
 ﻿using ThisRefactored.Domain.Entities;
 
-namespace ThisRefactored.Application.Models;
+namespace ThisRefactored.Application.Dtos;
 
 public record ProductDto(Guid Id,
                          string Name,
@@ -9,9 +9,9 @@ public record ProductDto(Guid Id,
                          decimal DeliveryPrice)
 {
     public static ProductDto CreateFrom(Product entity)
-        => new ProductDto(entity.Id,
-                          entity.Name,
-                          entity.Description,
-                          entity.Price,
-                          entity.DeliveryPrice);
+        => new(entity.Id,
+               entity.Name,
+               entity.Description,
+               entity.Price,
+               entity.DeliveryPrice);
 }

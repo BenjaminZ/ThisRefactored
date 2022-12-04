@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using ThisRefactored.Application.Models;
+using ThisRefactored.Application.Dtos;
 
 namespace ThisRefactored.Application.Commands.CreateProduct;
 

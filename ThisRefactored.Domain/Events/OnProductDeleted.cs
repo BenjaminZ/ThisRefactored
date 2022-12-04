@@ -1,8 +1,8 @@
 ﻿namespace ThisRefactored.Domain.Events;
 
-public class ProductDeleted : IDomainEvent
+public class OnProductDeleted : IDomainEvent
 {
-    public ProductDeleted(Guid productId)
+    public OnProductDeleted(Guid productId)
     {
         ProductId = productId;
     }
